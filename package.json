@@ -1,0 +1,16 @@
+{
+  "name": "factorial-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build:local": "docker build -t factorial-calculator -f Dockerfile.local .",
+    "run:local": "docker run -it --name factorial-calculator -p 3000:3000 factorial-calculator",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  }
+}
